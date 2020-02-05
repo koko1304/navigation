@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Simple Website</title>
+	<style>
+		body {
+			margin: 0;
+			background: pink;
+		}
+
+		.top-nav {
+			padding: 0 80px;
+			background: white;
+			position: relative;
+		}
+
+		.top-nav::after {
+			content: "";
+			display: block;
+			clear: both;
+		}
+
+		.logo {
+			font-size: 25px;
+			font-family: monospace;
+			float: left;
+			padding: 15px 0;
+		}
+
+		.top-nav .menu {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			position: absolute;
+			top: 50%;
+			right: 80px;
+			transform: translateY(-50%);
+		}
+
+		.top-nav .menu li {
+			float: left;
+		}
+
+		.top-nav .menu a {
+			display: inline-block;
+			padding: 15px;
+			color: #333;
+			text-decoration: none;
+		}
+
+		.top-nav .menu a:hover {
+			color: blue;
+		}
+	</style>
+</head>
+<body>
+	<div class="top-nav">
+		<div class="logo">Shapely Demo</div>
+		<ul class="menu">
+			<li><a href="#">HOME</a></li>
+			<li><a href="#">BLOG</a></li>
+			<li><a href="#">PORTFOLIO</a></li>
+		</ul>
+	</div>
+</body>
+</html>
